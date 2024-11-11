@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Scheduling Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Process Scheduling Tool</h1>
+
+        <div class="input-section">
+            <label for="arrivalTime">Arrival Time (AT) (space-separated):</label>
+            <input type="text" id="arrivalTime" placeholder="Example: 0 1 2">
+
+            <label for="burstTime">Burst Time (BT) (space-separated):</label>
+            <input type="text" id="burstTime" placeholder="Example: 5 3 8">
+
+            <label for="priority">Priority (space-separated, for Priority Scheduling):</label>
+            <input type="text" id="priority" placeholder="Example: 2 1 3">
+
+            <label for="timeQuantum">Time Quantum (For Round Robin):</label>
+            <input type="number" id="timeQuantum" placeholder="Example: 3">
+
+            <label for="algorithm">Choose Scheduling Algorithm:</label>
+            <select id="algorithm">
+                <option value="fcfs">FCFS</option>
+                <option value="sjf">SJF</option>
+                <option value="priority">Priority</option>
+                <option value="roundRobin">Round Robin</option>
+                <option value="hrrn">HRRN</option>
+                <option value="srtf">SRTF</option>
+                <option value="preemptivePriority">Pre-emptive priority</option>
+            </select>
+
+            <button onclick="runScheduling()">Run</button>
+        </div>
+
+        <div id="ganttChart"></div>
+
+        <table id="resultTable" class="hidden">
+            <thead>
+                <tr>
+                    <th>PID</th>
+                    <th>Arrival Time (AT)</th>
+                    <th>Burst Time (BT)</th>
+                    <th>Completion Time (CT)</th>
+                    <th>Waiting Time (WT)</th>
+                    <th>Turnaround Time (TAT)</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
