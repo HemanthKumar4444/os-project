@@ -1,75 +1,74 @@
 body {
-  
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #4CAF50, #4563a0);
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(10px); 
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .input-section {
-    margin-bottom: 20px;
-  }
-  
-  input, select, button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  #ganttChart {
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  table, th, td {
-    border: 1px solid #ddd;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4CAF50, #4563a0);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+#ganttChart {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.gantt-block {
+  background: #2196F3;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.hidden {
+  display: none;
+}
